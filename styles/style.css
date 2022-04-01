@@ -65,4 +65,42 @@ body {
 .try-it-part span {
   font-weight: 600;
 }
+
+form {
+  background-color: white;
+  border-radius: 10px;
+  padding: 25px;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.582);
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.582);
+}
+
+form .input-field input {
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+form button {
+  width: 100%;
+  padding: 20px;
+  color: white;
+  background-color: #38cc8c;
+  border-radius: 5px;
+  font-size: 1.05em;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: transparent;
+  margin-bottom: 15px;
+}
+
+form p {
+  text-align: center;
+  font-size: 13px;
+}
+
+form p a {
+  text-decoration: none;
+  color: red;
+}
 /*# sourceMappingURL=style.css.map */
