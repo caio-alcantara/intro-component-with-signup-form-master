@@ -10,7 +10,7 @@ function validateEmail() {
 }
 
 function validatePassword() {
-  let regex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"; // Minimum eight characters, at least one uppercase letter, one lowercase letter and one number:
+  let regex = "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$"; // Minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character:
   let password = document.querySelector("#password").value;
 
   if (password.match(regex)) {
@@ -37,13 +37,16 @@ button.addEventListener("click", function (event) {
     stringContainsNumber(lastName) === true
   ) {
     alert("oi");
+    console.log("names")
   }
 
   if (validateEmail() === false) {
     alert("oi");
+    console.log("email")
   }
 
   if (validatePassword() === false) {
     alert("oi");
+    console.log("password")
   }
 });
