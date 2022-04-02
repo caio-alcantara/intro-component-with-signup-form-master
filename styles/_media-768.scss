@@ -1,0 +1,38 @@
+@media screen and (min-width: 768px) {
+  main {
+    flex-direction: row;
+    align-items: center ;
+  }
+
+  .text-part {
+    text-align: left;
+
+    h1 {
+      padding-left: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    padding: 80px;
+  }
+
+  .text-part {
+    
+
+    h1 {
+      font-size: 3.2em;
+    }
+
+    p {
+      font-size: 20px;
+
+    }
+  }
+
+  .form-part {
+    width: 530px;
+    height: auto;
+  }
+}
