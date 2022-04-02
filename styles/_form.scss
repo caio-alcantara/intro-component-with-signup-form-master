@@ -24,6 +24,20 @@
     margin-bottom: 15px;
     border-radius: 5px;
     border: 1px solid gray;
+    width: 100%;
+    }
+  }
+
+  .input-case {
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      top: 17px;
+
+      display: none;
     }
   }
 
@@ -40,7 +54,11 @@
     margin-bottom: 15px;
   }
 
-  p {
+  button:hover {
+    opacity: 0.8;
+  }
+
+  .link-text {
     text-align: center;
     font-size: 13px;
     color: $grayish-blue;
@@ -55,4 +73,15 @@
 
 .form-part {
   min-width: 335px;
+}
+
+.error-message {
+  color: red;
+  font-size: 10px;
+  text-align: right;
+  margin-top: -10px;
+  padding-bottom: 10px;
+  font-weight: 500;
+
+  display: none;
 }

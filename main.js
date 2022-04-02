@@ -32,21 +32,61 @@ button.addEventListener("click", function (event) {
   let firstName = document.querySelector("#firstName").value;
   let lastName = document.querySelector("#lastName").value;
 
-  if (
-    stringContainsNumber(firstName) === true ||
-    stringContainsNumber(lastName) === true
-  ) {
-    alert("oi");
-    console.log("names")
+  if (stringContainsNumber(firstName) === true || firstName.length == 0) {
+    let firstNameStyle = document.querySelector("#firstName");
+    firstNameStyle.style = "border: 1px solid red;";
+    document.getElementsByName("firstName")[0].placeholder = "";
+    document.getElementById("firstName-error-icon").style = "display: block;";
+    document.getElementById("firstName-error-message").style =
+      "display: block;";
+  } else {
+    document.getElementById("firstName-error-icon").style = "display: none;";
+    document.getElementById("firstName-error-message").style = "display: none;";
+    let firstNameStyle = document.querySelector("#firstName");
+    firstNameStyle.style = "border: 1px solid green;";
+  }
+
+  if (stringContainsNumber(lastName) === true || lastName.length == 0) {
+    let lastNameStyle = document.querySelector("#lastName");
+    lastNameStyle.style = "border: 1px solid red;";
+    document.getElementsByName("lastName")[0].placeholder = "";
+    document.getElementById("lastName-error-icon").style = "display: block;";
+    document.getElementById("lastName-error-message").style = "display: block;";
+  } else {
+    document.getElementById("lastName-error-icon").style = "display: none;";
+    document.getElementById("lastName-error-message").style = "display: none;";
+    let lastNameStyle = document.querySelector("#lastName");
+    lastNameStyle.style = "border: 1px solid green;";
   }
 
   if (validateEmail() === false) {
-    alert("oi");
-    console.log("email")
+    let emailStyle = document.querySelector("#emailAdress");
+    emailStyle.style = "border: 1px solid red;";
+    document.getElementsByName("emailAdress")[0].placeholder =
+      "email@example.com";
+    document.getElementsByName("emailAdress")[0].placeholder.style =
+      "color: red;";
+    document.getElementById("emailAdress-error-icon").style = "display: block;";
+    document.getElementById("emailAdress-error-message").style =
+      "display: block;";
+  } else {
+    document.getElementById("emailAdress-error-icon").style = "display: none;";
+    document.getElementById("emailAdress-error-message").style =
+      "display: none;";
+    let emailStyle = document.querySelector("#emailAdress");
+    emailStyle.style = "border: 1px solid green;";
   }
 
   if (validatePassword() === false) {
-    alert("oi");
-    console.log("password")
+    let passwordStyle = document.querySelector("#password");
+    passwordStyle.style = "border: 1px solid red;";
+    document.getElementsByName("password")[0].placeholder = "";
+    document.getElementById("password-error-icon").style = "display: block;";
+    document.getElementById("password-error-message").style = "display: block;";
+  } else {
+    document.getElementById("password-error-icon").style = "display: none;";
+    document.getElementById("password-error-message").style = "display: none;";
+    let passwordStyle = document.querySelector("#password");
+    passwordStyle.style = "border: 1px solid green;";
   }
 });
