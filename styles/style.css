@@ -67,7 +67,7 @@ body {
   font-weight: 600;
 }
 
-form {
+.form {
   background-color: white;
   border-radius: 10px;
   padding: 25px;
@@ -75,52 +75,52 @@ form {
           box-shadow: 0 3px 5px rgba(0, 0, 0, 0.582);
 }
 
-form .input-field ::-webkit-input-placeholder {
+.form .input-field ::-webkit-input-placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   font-weight: 700;
   opacity: 1;
   /* Firefox */
 }
 
-form .input-field :-ms-input-placeholder {
+.form .input-field :-ms-input-placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   font-weight: 700;
   opacity: 1;
   /* Firefox */
 }
 
-form .input-field ::-ms-input-placeholder {
+.form .input-field ::-ms-input-placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   font-weight: 700;
   opacity: 1;
   /* Firefox */
 }
 
-form .input-field ::placeholder {
+.form .input-field ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   font-weight: 700;
   opacity: 1;
   /* Firefox */
 }
 
-form .input-field :-ms-input-placeholder {
+.form .input-field :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   font-weight: 700;
 }
 
-form .input-field ::-ms-input-placeholder {
+.form .input-field ::-ms-input-placeholder {
   /* Microsoft Edge */
   font-weight: 700;
 }
 
-form .input-field input {
+.form .input-field input {
   padding: 20px;
   margin-bottom: 15px;
   border-radius: 5px;
   border: 1px solid gray;
 }
 
-form button {
+.form button {
   width: 100%;
   padding: 20px;
   color: white;
@@ -133,14 +133,14 @@ form button {
   margin-bottom: 15px;
 }
 
-form p {
+.form p {
   text-align: center;
   font-size: 13px;
   color: #b9b6d3;
   font-weight: 600;
 }
 
-form p a {
+.form p a {
   text-decoration: none;
   color: red;
 }
